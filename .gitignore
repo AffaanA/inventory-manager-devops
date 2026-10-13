@@ -1,0 +1,23 @@
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Java / Gradle build output
+**/build/
+.gradle/
+
+# Node.js dependencies and build output
+**/node_modules/
+client/build/
+
+# Logs
+*.log
+
+# IDE and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
