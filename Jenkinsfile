@@ -5,6 +5,9 @@ pipeline {
     environment {
         APP_REPO = 'https://github.com/oussamahdidou/inventory-manager-springboot-react.git'
         IMAGE_NAME = 'inventory-backend:ci'
+        DB_URL = 'jdbc:postgresql://inventory-ci-db:5432/inventory'
+        DB_USERNAME = 'postgres'
+        DB_PASSWORD = 'ci_test_password'
     }
 
     stages {
