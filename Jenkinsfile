@@ -37,7 +37,7 @@ SPRING_DATASOURCE_PASSWORD = 'ci_test_password'
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t ${IMAGE_NAME} application/api'
+        sh 'docker build -t ${IMAGE_NAME} -f api/Dockerfile application/api'
             }
         }
     }
