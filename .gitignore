@@ -21,3 +21,16 @@ client/build/
 .DS_Store
 Thumbs.db
 
+
+# Terraform local state and sensitive files
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+crash.log
+crash.*.log
+
+# Terraform variable files may contain secrets
+*.tfvars
+*.tfvars.json
